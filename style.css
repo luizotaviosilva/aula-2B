@@ -1,6 +1,86 @@
 body{background-color: white;
 color: black
 }
-search box{
 
+.cabecalho{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:24px 0;
+}
+
+.cabecalho-imagem{
+    width: 10%;
+}
+
+.nome-da-loja{
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 44px;
+}
+
+.search-box{
+    position: absolute;
+    top: 5%;
+    left: 92%;
+    transform: translate(-95%, -8%);
+    background: white;
+    height: 35px;
+    padding: 7px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lupa-branca{
+    display: none;
+    width: 60%;
+}
+.lupa-azul{
+    width: 60%;
+}
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    width: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+.search-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70%;
+    cursor: pointer;
+}
+.search-box:hover > .search-text{
+    width: 320px;
+    padding-left: 20px;
+}
+.search-box:hover > .search-btn{
+    background: white;
+}
+.search-box:hover > .search-btn .lupa-azul{
+    display: none;
+}
+.search-box:hover > .search-btn .lupa-branca{
+    display: block;
+}
+::-webkit-input-planceholde{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, blinkMacSystemFonte 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: white;
+}
+.imagem-jogo{
+    width: 50%;
+    margin: auto;
+    padding: auto;
 }
